@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, Response, stream_with_context
-import requests
+#import requests
 
 api_bp = Blueprint("api", __name__)
 
