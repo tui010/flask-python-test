@@ -30,7 +30,7 @@ def get_item(item_id: int):
         }
     )
 
-@api_bp.get("/api/get_book/<str:book_code>")
+@api_bp.get("/api/get_book/<book_code>")
 def get_book(book_code: str):
     remote_url = f"https://ncert.nic.in/textbook/pdf/{book_code}.zip"
     upstream_resp = requests.get(remote_url, stream=True)
